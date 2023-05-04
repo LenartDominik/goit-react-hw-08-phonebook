@@ -1,9 +1,9 @@
 import css from './Home.module.css';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const Home = () => {
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <title>Phonebook app</title>
       </Helmet>
@@ -15,7 +15,7 @@ const Home = () => {
           </p>
         </div>
       </section>
-    </>
+    </HelmetProvider>
   );
 };
 
