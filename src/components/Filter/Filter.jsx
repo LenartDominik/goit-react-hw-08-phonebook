@@ -25,3 +25,5 @@ const Filter = () => {
     </label>
   );
 };
+
+export default Filter;
